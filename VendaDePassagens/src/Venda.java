@@ -2,6 +2,9 @@ public class Venda {
     private String destino;
     private int npassagem;
     private double peso;
+    public double totPassagem;
+    public double totCusto;
+    public double total;
 
     public String getDestino() {
         return destino;

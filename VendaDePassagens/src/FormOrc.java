@@ -221,9 +221,9 @@ public class FormOrc extends javax.swing.JFrame {
         ctrl.CalcPassagem();
         ctrl.CalcBagagem();
         ctrl.CalcTotal();
-        this.txtTotpassagem.setText(""+ctrl.totPassagem);
-        this.txtTotcusto.setText(""+ctrl.totCusto);
-        this.txtTotal.setText(""+ctrl.total);
+        this.txtTotpassagem.setText(""+ctrl.v.totPassagem);
+        this.txtTotcusto.setText(""+ctrl.v.totCusto);
+        this.txtTotal.setText(""+ctrl.v.total);
     }//GEN-LAST:event_btnCalcularActionPerformed
 
     private void txtPassagemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPassagemActionPerformed
@@ -236,6 +236,9 @@ public class FormOrc extends javax.swing.JFrame {
 
     private void btnNegarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNegarActionPerformed
         ctrl.CancelarPassagem();
+        this.txtTotpassagem.setText("");
+        this.txtTotcusto.setText("");
+        this.txtTotal.setText("");
     }//GEN-LAST:event_btnNegarActionPerformed
 
     private void txtTotalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTotalActionPerformed
